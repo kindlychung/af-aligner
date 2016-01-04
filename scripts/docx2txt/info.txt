@@ -1,0 +1,9 @@
+Version 1.0
+By Sandeep Kumar (shimple0@yahoo.com)
+Downloaded from:
+http://docx2txt.sourceforge.net/
+
+Hidden text is conserved, footnotes, headers and footers are not.
+
+Docx2txt needs to unzip the docx (zip) files. To make this work on Windows, I modded the original perl script to use a different config file (docx2txt_win.config) which the aligner generates at runtime, filling in the path to unzip.exe (scripts/doxc2txt/unzip) according to what folder the aligner is in. Then I generated an executable (docx2txt_win.exe) out of this slightly modified script.
+On Linux and OS X systems, the original .pl is used without modifications as these OSes can reasonable be expected to have an unzip utility at usr/bin/unzip.

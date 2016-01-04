@@ -1,0 +1,11 @@
+﻿The script uses partialAlign.exe, which was created from partialAlign.py using py2exe.exe
+
+
+dll's needed for the partialAlign.exe: 
+
+C:\WINDOWS\system32\WSOCK32.dll
+C:\WINDOWS\system32\USER32.dll
+C:\WINDOWS\system32\SHELL32.dll
+C:\WINDOWS\system32\KERNEL32.dll
+
+If the exe doesn't work, fall back on partialAlign.py (needs python interpreter) or the non-batch mode of Hunalign.

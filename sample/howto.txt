@@ -1,0 +1,43 @@
+This is an example that illustrates the use of LF aligner. The idea is that by reading this txt and the output in the command line window itself, you can test the script and get a reasonably good idea of how to use it, even without going through the full readme - which is still recommended as it contains a lot more information than this short example of practical use.
+
+Two sample files are provided, namely the English and Spanish versions of the Maastricht Treaty taken from pdf files available at http://bookshop.europa.eu/is-bin/INTERSHOP.enfinity/WFS/EU-Bookshop-Site/en_GB/-/EUR/ViewPublication-Start?PublicationKey=FXAC08115
+
+I exported the pdfs using File/Save as text in Acrobat reader, deleted the unwanted parts and resaved in UTF-8 encoding. No other preprocessing was done, I didn't even bother removing the page headers. If you open the files, you can see they are a mess: there is a line break after every word. This is not a problem though; with the right settings, the aligner corrects this.
+
+Running the aligner:
+
+Double click on aligner/LF_aligner_XXX. A command line window should appear, and, after a good couple of seconds, prompt you to choose a file type (if you get no terminal window by double clicking the aligner file, open a terminal window manually, drag and drop the file in it and press enter). As the sample files are exported from pdf, type "p" (without the quotes) and press enter.
+Note: in everyday use, you'll probably need the generic "t" (for txt files) more often than "p".
+
+Language of file 1 - "en".
+Language of file 2 - "es".
+
+Segment text - "y". The report should show that both texts were chopped up into about 480 sentences from the original ~40 paragraphs.
+
+Revert - "n".
+
+Now you should get an alignment report. The two numbers (480 and 479) are very close to each other, which is a very good sign. Usually, you can expect a very reliable automatic alignment (and thus have little or no manual correction to do) if the two numbers are within a couple of % of each other.
+The other important bit is the quality value, 0.876 in this case. That's also very good; anything over 0.5 is promising.
+
+Cleanup - as you wish, I always choose "y".
+
+Review: "x". An xls spreadsheet will open, allowing you to review the autoalignment. See instructions in the xls itself.
+Close the xls and the txt that will also be opened.
+
+Create TMX - "y".
+
+Language code 1 - "EN-GB"
+Language code 2 - "ES-ES"
+
+Date - leave blank and just press Enter.
+
+Creator ID - leave blank and just press Enter.
+
+Note - leave blank and just press Enter.
+
+Press enter to quit the aligner.
+
+Now you should have a TMX named en_es.tmx in the sample folder. Import it into a new TM with your CAT tool of choice as a test.
+
+Note: once you have learned the basics, open LF_aligner_setup.txt and check the customization options and features available there.
+

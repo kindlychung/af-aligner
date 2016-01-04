@@ -1,0 +1,30 @@
+Program: LF Aligner, version: 3.12, OS: Mac, launched: 2015.05.04_13.18.26
+
+Setup: filetype_def: t; filetype_prompt: y; lang_1_iso_def: en; lang_2_iso_def: hu; l1_prompt: y; l2_prompt: y; segmenttext: y; confirm_segmenting: y; cleanup_def: y; cleanup_prompt: n; review_def: x; review_prompt: y; create_tmx_def: y; create_tmx_prompt: y; tmx_langcode_1_def: ; tmx_langcode_2_def: ; tmx_langcode_1_prompt: y; tmx_langcode_2_prompt: y; creationdate_prompt: y; creationid_def: LF Aligner 3.12; creationid_prompt: y; ask_master_TM: n; chopmode: 15000; tmxnote_prompt: y; skiphalfempty: y; pdfmode: y
+
+GUI off
+filetype: t
+Input file 1: hp1.txt (/tmp/hp1.txt)
+ERROR: File 2 not found; folder: /tmp, file: hp1.txt
+Input file 2: hp2.txt (/tmp/hp2.txt)
+Input file 1: hp1.txt (/private/tmp/hp1.txt)
+Input file 2: hp2.txt (/private/tmp/hp2.txt)
+Input file sizes: 465080 bytes 485687 bytes
+File sizes after conversion to txt: 465080 bytes 485687 bytes
+Initial stats: 
+- en: 3784 segments,	82908 words,	435477 chars
+- nl: 2916 segments,	83223 words,	465700 chars
+Segmentation: y, segment numbers: 
+- en: 3784 -> 7082
+- nl: 2916 -> 6594
+Using segmented file versions
+Generated en-nl dictionary with 15219 entries
+Hunalign dictionary: en-nl.dic
+Using Hunalign in normal mode, (7082 is less than 15000)
+Aligned file: 6258 segments, 979049 bytes (/private/tmp/align_2015.05.04_13.18.26/aligned_en-nl.txt)
+Cleanup: y
+Review: x
+Generated xls with 6258 lines
+Converted xls to txt after review; 6258 lines
+Create TMX: y, language codes: EN, NL, date/time: 20150504T111826Z, creator ID: LF Aligner 3.12, note: last column
+Terminated normally.

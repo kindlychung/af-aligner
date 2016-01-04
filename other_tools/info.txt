@@ -1,0 +1,2 @@
+﻿This folder contains a TMX maker and bastardized versions of LF aligner.
+For my other software for translators, see the "grab bag" at sourceforge.net/projects/aligner

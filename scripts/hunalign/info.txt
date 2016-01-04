@@ -1,0 +1,4 @@
+Hunalign from:
+http://mokk.bme.hu/resources/hunalign
+
+linux and mac version modded to say "X sentences read in language 1"

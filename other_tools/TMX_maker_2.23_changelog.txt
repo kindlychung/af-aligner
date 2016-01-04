@@ -1,0 +1,18 @@
+﻿New in 2.23
+- Xls input files now accepted as well as txt - txt is still recommended for reliability
+
+New in 2.22
+- Note printing bug fixed (when taking notes from the input file, the note in the first segment was propagated to all)
+
+New in 2.21
+- GUI for choosing input and output files on Windows (can be disabled in setup)
+- Support for multiple import files in GUI (just choose several files, they will be merged into one TMX)
+
+New in 2.2
+- Support for multilingual TMX files (there is no upper limit)
+
+New in 2.11
+- Malformed lines are now skipped to make use with messy files more convenient
+
+New in 2.1
+- Better Studio compatibility: creator name, creation time and Note should now be recognized by Studio (the TMX generator now spoofs the Trados o-tmf string)

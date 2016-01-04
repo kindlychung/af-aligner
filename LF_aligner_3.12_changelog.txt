@@ -1,0 +1,112 @@
+﻿New in 3.12:
+- Segments with no text in one of the languages not added to bilingual TMX files
+- Improved functionality in adding notes to segments in TMX files in the GUI
+- GUI and command line arguments in TMX maker
+
+New in 3.11:
+- File name input bugfix
+
+New in 3.1:
+- Input files can now be in different folders; the output files are placed in a timestamped new folder created in the folder of the first input file (original input files are always left where they are)
+- The aligner can now be called with command line arguments (file names, languages & other settings), providing a new and improved batch mode that also supports multilingual batch projects (see readme for details)
+
+New in 3.01:
+- Batch aligner bug fixed (no changes made to main programme)
+
+New in 3.0:
+- Graphical user interface added (enabled on Windows by default; Linux and OSX users should check the readme)
+- Excel macro to make the fixing of misaligned segments quicker
+- New segmentation rules (nonbreaking prefix lists) added for numerous European languages including, among others, Spanish (es), French (fr), Italian (it), Swedish (sv), Russian (ru) and Dutch (nl)
+- TMX language code defaults filled in automatically based on languages picked (can be overwritten in setup)
+- File naming convention changed for multilingual projects (file names often ended up being too long for Windows with the old system)
+- Improved processing of presegmented TMX input files
+- Cleanup question skipped by default (can be re-enabled in setup)
+- Better out-of-the-box large file support (chopping mode automatically enabled for files over 15000 segments)
+- Miscellaneous minor fixes and improvements
+
+New in 2.59:
+- When reviewing your files in Excel, now you don't need to transfer your changes to a txt file manually - just save the xls itself
+- Xls input files now accepted by TMX maker
+- Bug in the "filter out untranslated" feature fixed
+- Automatic evaluation of segmenting in both the normal and batch aligner (needs to be enabled in setup)
+
+New in 2.58:
+- Bugfix for non-GUI mode
+
+New in 2.57:
+- List of language codes printed on user's request
+- Minor EP report file naming bug fixed
+
+New in 2.56:
+- Bug affecting segments starting with "- " fixed
+
+New in 2.55:
+- Bug fixed (the output file got deleted halfway through when run in 2-language mode... oops)
+
+New in 2.54:
+- The main aligner now does multilingual projects (up to 100 languages); separate 3- and 4-language aligners not needed anymore
+- Bug fixed in TMX maker (when taking notes from the input file, the note in the first segment was propagated to the whole file)
+
+New in 2.53:
+- Dictionary data added for 32 major languages to improve alignment results; see the two-letter language codes you need to use in the readme and at http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+- Mac and linux: segmenter bug fixed; windows: minor program termination bug related to web features fixed
+
+New in 2.52:
+- TMX input files now accepted (allows you to presegment with your CAT tool and thus align any file your CAT can process - see "Using your CAT to extract/segment text" in readme)
+
+New in 2.51:
+- Match confidence value now removed by default
+
+New in 2.5:
+- Graphical file selection window instead of drag & drop on Windows (can be disabled in setup)
+
+New in 2.41:
+- Simple Chinese/Japanese sentence segmenter added - use language codes zh and ja to apply (send feedback/suggestions to lfaligner@gmail.com)
+- The TMX maker can now generate multilingual TMX files with any number of languages
+
+New in 2.4:
+- 3- and 4-language script versions added and TMX maker and batch aligner moved to "other tools" folder to make the main folder less cluttered
+- The TMX maker now skips malformed lines
+
+New in 2.302:
+- Pdf bug fixed
+
+New in 2.3:
+- Support for various file formats with Abiword, including .rtf and .odt. If you're not on Windows, you'll need to install Abiword separately; visit http://www.abisource.com/download/index.phtml
+- Delete duplicate and untranslated entries - see setup file
+
+New in 2.201:
+- Startup bug fixed
+
+New in 2.2:
+- Support for .doc input files using Antiword - see notes in readme
+- Detect and use preexisting pdftotext and antiword installs on *nix systems
+
+New in 2.1:
+- Some character conversion functionality added (see end of setup)
+- Retrieval of CELEX documents improved; now the aligner should find a lot more (all?) documents with a CELEX number
+- Better Studio compatibility: creator name, creation time and Note should now be recognized by Studio (the TMX generator now spoofs the Trados o-tmf string)
+
+New in 2.01b:
+- Batch aligner now makes xls and tmx files out of entire project
+- Other minor fixes in batch aligner
+
+New in 2.01:
+- Some TMX compatibility issues fixed (srclang, segtype and &)
+
+
+Differences compared to aligner.bat:
+- Now supports Windows, Linux and Mac OS X
+- Pdf and docx source files also supported on top of txt and html
+- Drag & drop source files from any folder
+- Batch alignment, i.e. align any number of txt, docx, pdf or HTML file pairs in one go
+- Formatted xls files created after autoalignment
+- Simple download+alignment of Commission proposals and EP reports as well as CELEX documents
+- No need to install Perl or any other software(applies to BAT as well, as of 1.1.4.)
+- Extensive setup of defaults etc. in separate file (aligner_setup.txt)
+- Time and date autorecognized
+- Any new dictionaries added by the user are now autorecognized without having to change the code
+- No 3 and 4 language mode
+- More error checking done and more data reported by aligner in console and in log file
+- Lots of other minor changes and improvements; e.g. defaults are different, better HTML segmentation etc.
+- Hu-En dictionary flipped to En-Hu, now you need to go English first - get hu-en.dic from ftp://ftp.mokk.bme.hu/Hunglish/src/hunalign/latest/hunalign-1.0/data/ and save it in scripts/hunalign/data if you want the dictionary to work in either direction

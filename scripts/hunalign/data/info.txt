@@ -1,0 +1,19 @@
+Hunalign can generate better alignments if it has a bilingual dictionary to rely on.
+Therefore, LF Aligner comes with a multilingual dictionary covering 832 combinations of 32 major languages (the 32 languages are: all EU official languages except Gaelic and Maltese, plus Croatian, Arabic, Hebrew, Chinese, Japanese, Korean, Latin, Norwegian, Russian, Swahili and Turkish). This built-in dictionary data is based on Wiktionary and the Eurovoc glossary. Dictionaries for each language pair are generated automatically as they are needed - there are close to 1000 language combinations, so providing premade dictionaries for all pairs would take up too much space.
+
+If your language pair is not covered or you want to use your own dictionary instead of the one shipped with LF Aligner, place it in this folder.
+
+Format:
+[language 2 term 1] @ [language 1 term 1]
+[language 2 term 2] @ [language 1 term 2]
+
+Name the file "l1-l2.dic", e.g. "es-en.dic".
+
+Note that you have to put language 2 in the first column, i.e. the other way round compared to what would make sense... I guess the authors of Hunalign wanted to keep you on your toes.
+
+If you named your dictionary es-en.dic, it will be used by the aligner when you declare your alignment's first language to be Spanish (es) and the second English (en).
+If you want the dictionary to be used regardless of the order in which you specify the languages for the aligner, flip the terms in the dictionary and save the .dic file under the other name (en-es.dic in our example) as well.
+
+When running the aligner (and when creating .dic files), use the two-letter language codes listed at http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+The codes for EU official languages are as follows: en, fr, de, es, it, hu, bg, cs, da, et, el, lv, lt, mt, nl, pl, pt, ro, sk, sl, fi, sv, ga.
+Language codes for some other languages: Chinese: zh, Japanese: ja, Korean: ko, Russian: ru, Croatian: hr, Turkish: tr, Arabic: ar, Hebrew: he, Latin: la, Norwegian: no, Swahili: sw

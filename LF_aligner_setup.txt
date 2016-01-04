@@ -1,0 +1,73 @@
+﻿Here, you can specify settings for LF aligner. Put your choice (usually y or n) between the square brackets, and don't change anything else in this file. If you want to restore the default settings or you think you may have corrupted the file, just delete it. It will be recreated with default settings the next time the aligner runs.
+
+
+*** INPUT ***
+
+Filetype default (t/c/com/epr/w/h/p): [t]
+Prompt user for filetype: [y]
+
+Language 1 default: [en]
+Prompt user for language 1: [y]
+Language 2 default: [hu]
+Prompt user for language 2: [y]
+
+
+*** OUTPUT ***
+
+Segment to sentences: [y]
+Ask for confirmation after segmenting (y/n/auto) - n and auto allow the aligner to run unattended (see readme): [y]
+
+Merge numbers and chapter/point headings with the next segment: [y]
+
+Cleanup default: [y]
+Prompt user whether to do cleanup: [n]
+
+Remove match confidence value: [y]
+
+Delete duplicate entries: [n]
+
+Delete entries where the text is the same in both languages (filters out untranslated text and segments than only contain numbers etc.): [n]
+
+Review default (n/t/x): [x]
+Prompt user whether/how to review pairings: [y]
+
+Offer to write to txt (allows you to add all aligned files to the same master TM): [n]
+Master TM path: []
+
+
+*** TMX ***
+
+Make TMX by default: [y]
+Prompt user whether to make TMX: [y]
+
+Language code 1 default: []
+Prompt user for language code 1: [y]
+Language code 2 default: []
+Prompt user for language code 2: [y]
+
+Prompt user for creation date and time: [y]
+
+Creator ID default: []
+Prompt user for creator ID: [y]
+
+Prompt user for TMX note: [y]
+
+Skip half-empty segments: [y]
+
+
+*** MISC ***
+
+Chop up files larger than this size (0 deactivates the feature). [15000]
+
+Pdf conversion mode; formatted or not (-layout option in pdftotext) [y]
+
+Force GUI on (y) or off (n) []
+
+
+Character conversion: provide character pairs separated by a tab, one pair per line. The aligner will replace the first character with the second in your aligned file. The replacement is case-sensitive and can be used to decode character entities or fix corrupted characters.
+
+Character conversion table for language 1:
+
+
+Character conversion table for language 2:
+
